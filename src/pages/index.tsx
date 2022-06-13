@@ -1,11 +1,7 @@
-import { Header } from "@/components/Header";
+import Home from '@/pages/home'
 
-export default function Home () {
+export default function Main () {
   return (
-    <>
-      <Header />
-      
-      <h1>Hello world</h1>
-    </>
+    <Home />
   )
 }

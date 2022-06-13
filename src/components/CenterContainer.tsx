@@ -9,9 +9,9 @@ export function CenterContainer ({children}: CenterContainerProps) {
   return (
     <Box
       w="100%"
-      maxW="1160px"
+      maxW="1240px"
       mx="auto"
-      px="4"
+      px="8"
     >
       {children}
     </Box>
