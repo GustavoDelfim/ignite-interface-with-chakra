@@ -45,7 +45,7 @@ export function Continents ({continents}: ContinentsProps) {
 
         <Box mt="20">
           <Swiper
-            navigation={true}
+            navigation={{}}
             modules={[Navigation, Pagination]}
             pagination={{ clickable: true }}
             loop={true}
