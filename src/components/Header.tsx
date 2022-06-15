@@ -1,6 +1,7 @@
-import { Box, Button, IconButton, Image } from "@chakra-ui/react";
+import { Box, IconButton, Image } from "@chakra-ui/react";
 import { CenterContainer } from "./CenterContainer";
 import { MdOutlineArrowBackIosNew } from "react-icons/md"
+import Link from "next/link";
 
 interface HeaderProps {
   isBack?: boolean
@@ -34,7 +35,10 @@ export function Header ({ isBack = false }: HeaderProps) {
               />
             </Box>
           }
-          <Image src="/logo.png" alt="Worldtip" maxW="184px" mx="auto" />
+
+          <Link href="/">
+            <Image src="/logo.png" alt="Worldtip" maxW="184px" mx="auto" cursor="pointer" />
+          </Link>
         </Box>
       </CenterContainer>
     </Box>

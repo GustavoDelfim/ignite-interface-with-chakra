@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "Europa",
+    "wallpaper": "/continents/europe/wallpaper.jpg",
+    "description": "O continente mais antigo.",
+    "cities": [
+      {"id": 1, "name": "Londres", "country": "Inglaterra", "images": ["/continents/europe/london.jpg"]},
+      {"id": 2, "name": "Paris", "country": "França", "images": ["/continents/europe/paris.jpg"]},
+      {"id": 3, "name": "Roma", "country": "itália", "images": ["/continents/europe/rome.jpg"]},
+      {"id": 4, "name": "Praga", "country": "Republica Tcheca", "images": ["/continents/europe/praga.jpg"]},
+      {"id": 5, "name": "Amsterdã", "country": "Holanda", "images": ["/continents/europe/amsterda.jpg"]}
+    ]
+  },
+  {
+    "id": 2,
+    "name": "America",
+    "wallpaper": "/continents/america/wallpaper.jpg",
+    "description": "Cidades que encantam.",
+    "cities": [
+      {"id": 6, "name": "Rio de Janeiro", "country": "Brasil", "images": ["/continents/america/rio-de-janeiro.jpg"]},
+      {"id": 7, "name": "Buenos Aires", "country": "Argentina", "images": ["/continents/america/buenos-aires.jpg"]},
+      {"id": 8, "name": "Cidade do Mexico", "country": "Mexico", "images": ["/continents/america/mexico-city.jpg"]},
+      {"id": 9, "name": "New York", "country": "Estado Unidos", "images": ["/continents/america/new-york.jpg"]},
+      {"id": 10, "name": "Santiago", "country": "Chile", "images": ["/continents/america/santiago.jpg"]}
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Asia",
+    "wallpaper": "/continents/asia/wallpaper.jpg",
+    "description": "Continente de culturas milenares",
+    "cities": [
+      {"id": 6, "name": "Tóquio", "country": "Japão", "images": ["/continents/asia/toquio.jpg"]},
+      {"id": 7, "name": "Seul", "country": "Coreia do Sul", "images": ["/continents/asia/seul.jpg"]},
+      {"id": 8, "name": "Bangkok", "country": "Tailandia", "images": ["/continents/asia/bangkok.jpg"]},
+      {"id": 9, "name": "Xangai", "country": "China", "images": ["/continents/asia/xangai.jpg"]},
+      {"id": 10, "name": "Istambul", "country": "Turquia", "images": ["/continents/asia/istambul.jpg"]}
+    ]
+  }
+]
