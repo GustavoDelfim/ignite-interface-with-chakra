@@ -56,7 +56,7 @@ export function Continents ({continents}: ContinentsProps) {
                   key={continent.id}
                   className={styles.slide}
                 >
-                  <Link href={`/continent/${continent.id}`}>
+                  <Link href={`/continents/${continent.id}`}>
                     <Box
                       w="100%"
                       h="100%"
@@ -85,7 +85,7 @@ export function Continents ({continents}: ContinentsProps) {
                         position="relative"
                         zIndex={1}
                         color="gray.100"
-                        fontSize={["5xl"]}
+                        fontSize={["2xl", "3xl", "5xl"]}
                       >
                         {continent.name}
                       </Heading>

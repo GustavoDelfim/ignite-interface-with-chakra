@@ -2,12 +2,11 @@ import { Box, IconButton, Image } from "@chakra-ui/react";
 import { CenterContainer } from "./CenterContainer";
 import { MdOutlineArrowBackIosNew } from "react-icons/md"
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-interface HeaderProps {
-  isBack?: boolean
-}
-
-export function Header ({ isBack = false }: HeaderProps) {
+export function Header () {
+  const { asPath, back } = useRouter()
+  
   return (
     <Box bg="white">
       <CenterContainer>
@@ -18,7 +17,7 @@ export function Header ({ isBack = false }: HeaderProps) {
           justifyContent="center"
           position="relative"
         >
-          {isBack &&
+          {asPath !== "/" &&
             <Box
               position="absolute"
               top="0"
@@ -32,6 +31,7 @@ export function Header ({ isBack = false }: HeaderProps) {
                 icon={<MdOutlineArrowBackIosNew size="20" />}
                 bg="transparent"
                 color="gray.700"
+                onClick={back}
               />
             </Box>
           }
