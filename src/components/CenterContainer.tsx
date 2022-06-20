@@ -11,7 +11,7 @@ export function CenterContainer ({children}: CenterContainerProps) {
       w="100%"
       maxW="1240px"
       mx="auto"
-      px="8"
+      px={[6, 6, 8]}
     >
       {children}
     </Box>

@@ -1,7 +1,8 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import { DefaultLayout } from "../layouts/Default";
 import { Banner } from "./Banner";
-import { Informations } from "./Informations";
+import { Cities } from "./cities";
+import { Informations } from "./informations";
 
 interface City {
   id: number
@@ -26,6 +27,7 @@ export default function Continent ({continent}: ContinentProps) {
       <> 
         <Banner title={continent.name} url={continent.wallpaper} />
         <Informations />
+        <Cities cities={continent.cities} />
       </>
     </DefaultLayout>
   )

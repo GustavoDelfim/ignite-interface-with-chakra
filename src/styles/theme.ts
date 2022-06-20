@@ -6,6 +6,9 @@ export const theme = extendTheme({
     body: `'Poppins', sans-serif`
   },
   colors: {
+    yellow: {
+      '400': '#FFBA08'
+    },
     gray: {
       '100': '#F5F8FA',
       '200': '#DADADA',
