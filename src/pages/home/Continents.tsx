@@ -8,13 +8,23 @@ import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 
-import styles from "./Continents.module.scss"
 import Link from "next/link"
 
 export interface City {
   id: number
   name: string
   images: string[]
+  country: {
+    name: string
+    flag: string
+  }
+}
+
+export interface Article {
+  text: string,
+  number_country: number
+  number_language: number
+  number_cities: number
 }
 
 export interface Continent {
@@ -23,6 +33,7 @@ export interface Continent {
   wallpaper: string
   description: string
   cities: City[]
+  article: Article
 }
 
 interface ContinentsProps {
@@ -52,55 +63,59 @@ export function Continents ({continents}: ContinentsProps) {
           >
             {continents.map(continent => {
               return (
-                <SwiperSlide
-                  key={continent.id}
-                  className={styles.slide}
-                >
-                  <Link href={`/continents/${continent.id}`}>
-                    <Box
-                      w="100%"
-                      h="100%"
-                      position="absolute"
-                      top={0}
-                      left={0}
-                      bg={`url('${continent.wallpaper}') center center no-repeat`}
-                      bgSize="cover"
-                      cursor="pointer"
-                      display="flex"
-                      justifyContent="center"
-                      alignItems="center"
-                      flexDir="column"
-                    >
+                <SwiperSlide key={continent.id}>
+                  <Box
+                    w="100%"
+                    h={[250, 300, 450]}
+                    bg="#eee"
+                    position="relative"
+                  >
+                    <Link href={`/continents/${continent.id}`}>
                       <Box
                         w="100%"
                         h="100%"
                         position="absolute"
                         top={0}
                         left={0}
-                        bg="black"
-                        opacity={.3}
-                      />
+                        bg={`url('${continent.wallpaper}') center center no-repeat`}
+                        bgSize="cover"
+                        cursor="pointer"
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        flexDir="column"
+                      >
+                        <Box
+                          w="100%"
+                          h="100%"
+                          position="absolute"
+                          top={0}
+                          left={0}
+                          bg="black"
+                          opacity={.3}
+                        />
 
-                      <Heading
-                        position="relative"
-                        zIndex={1}
-                        color="gray.100"
-                        fontSize={["2xl", "3xl", "5xl"]}
-                      >
-                        {continent.name}
-                      </Heading>
-                      <Text
-                        position="relative"
-                        zIndex={1}
-                        color="gray.300"
-                        fontSize="2xl"
-                        fontWeight="700"
-                        mt={2}
-                      >
-                        {continent.description}
-                      </Text>
-                    </Box>
-                  </Link>
+                        <Heading
+                          position="relative"
+                          zIndex={1}
+                          color="gray.100"
+                          fontSize={["2xl", "3xl", "5xl"]}
+                        >
+                          {continent.name}
+                        </Heading>
+                        <Text
+                          position="relative"
+                          zIndex={1}
+                          color="gray.300"
+                          fontSize="2xl"
+                          fontWeight="700"
+                          mt={2}
+                        >
+                          {continent.description}
+                        </Text>
+                      </Box>
+                    </Link>
+                  </Box>
                 </SwiperSlide>
               )
             })}

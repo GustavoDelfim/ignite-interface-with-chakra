@@ -16,7 +16,7 @@ export function Banner () {
       bgSize="cover"
       display="flex"
       alignItems="center"
-      py={isMobile ? 8 : 0}
+      py={[8, 8, 0]}
     >
       <CenterContainer>
         <Box
@@ -29,7 +29,6 @@ export function Banner () {
               color="gray.100"
               fontWeight="500"
               fontSize={["lg", "2xl", "4xl"]}
-              textAlign={isMobile ? 'center' : 'left'}
             >
               5 Continentes,<br /> infinitas possibilidades.
             </Heading>
@@ -38,7 +37,6 @@ export function Banner () {
               fontWeight="normal"
               fontSize={20}
               mt={7}
-              textAlign={isMobile ? 'center' : 'left'}
             >
               Chegou a hora de tirar do papel a viagem que você sempre sonhou.
             </Text>

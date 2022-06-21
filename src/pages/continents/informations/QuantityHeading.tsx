@@ -1,7 +1,7 @@
 import { Heading } from "@chakra-ui/react"
 
 interface QuantityHeadingProps {
-  text: string
+  text: number
 }
 
 export function QuantityHeading ({ text }: QuantityHeadingProps) {

@@ -19,12 +19,19 @@ export function Cities ({cities = []}: CitiesProps) {
           Cidades +100
         </Heading>
 
-        <Flex mt={10} gap={10}>
+        <Flex
+          mt={10}
+          gap={10}
+          display="grid"
+          gridTemplateColumns={["repeat(1, 256px)", "repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]}
+          justify="center"
+        >
           {cities.map(city => {
-            return <City
-              key={city.id}
-              images={city.images}
-            />
+            return (
+              <Box key={city.id}>
+                <City {...city} />
+              </Box>
+            )
           })}
         </Flex>
       </CenterContainer>
