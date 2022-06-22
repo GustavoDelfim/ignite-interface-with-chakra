@@ -15,7 +15,8 @@
       "text": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
       "number_country": 50,
       "number_language": 60,
-      "number_cities": 27
+      "number_cities": 27,
+      "description_number_cities": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
     }
   },
   {
@@ -31,10 +32,11 @@
       {"id": 10, "name": "Santiago", "country": {"name": "Chile", "flag": "CL"}, "images": ["/continents/america/santiago.jpg"]}
     ],
     "article": {
-      "text": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "text": "A America é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
       "number_country": 50,
       "number_language": 60,
-      "number_cities": 27
+      "number_cities": 27,
+      "description_number_cities": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
     }
   },
   {
@@ -50,10 +52,11 @@
       {"id": 10, "name": "Istambul", "country": {"name": "Turquia", "flag": "TR"}, "images": ["/continents/asia/istambul.jpg"]}
     ],
     "article": {
-      "text": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "text": "A Asia é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
       "number_country": 50,
       "number_language": 60,
-      "number_cities": 27
+      "number_cities": 27,
+      "description_number_cities": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
     }
   }
 ]

@@ -7,7 +7,7 @@ import { Article } from "@/pages/home/Continents";
 
 interface InformationsProps extends Article {}
 
-export function Informations ({text, number_cities, number_country, number_language}: InformationsProps) {
+export function Informations ({text, number_cities, number_country, number_language, description_number_cities}: InformationsProps) {
   return (
     <Box my={[10, 10, 24]}>
       <CenterContainer>
@@ -39,7 +39,7 @@ export function Informations ({text, number_cities, number_country, number_langu
               <QuantityDescription>
                 cidades +100
 
-                <Tooltip hasArrow label='Search places' bg='gray.700' color='gray.100'>
+                <Tooltip hasArrow label={description_number_cities} bg='gray.700' color='gray.100'>
                   <Box as="span" ml={1} color="gray.400" fontSize={[17, 17, 20]}><RiInformationLine /></Box>
                 </Tooltip>
               </QuantityDescription>
