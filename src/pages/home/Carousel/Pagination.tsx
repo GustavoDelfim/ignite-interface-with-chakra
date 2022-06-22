@@ -1,6 +1,4 @@
-import { Box, Button, ButtonProps, Flex, Text, useBreakpointValue } from "@chakra-ui/react";
-import { cloneElement, useEffect } from "react";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
+import { Box, Flex, useBreakpointValue } from "@chakra-ui/react";
 import { useSwiper } from "swiper/react";
 import { useSliderContinents } from "./SliderContinentsProvider";
 

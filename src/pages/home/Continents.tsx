@@ -1,7 +1,7 @@
 import { CenterContainer } from "@/components/CenterContainer"
-import { Box, Button, Heading, Text } from "@chakra-ui/react"
+import { Box, Heading, Text } from "@chakra-ui/react"
 
-import { Swiper, SwiperSlide, useSwiper, useSwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 import "swiper/css"
 
